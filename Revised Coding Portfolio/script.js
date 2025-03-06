@@ -48,3 +48,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }, 500); // Initial delay before h1 starts
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.getElementById("menu-icon");
+    const navbar = document.querySelector(".navbar");
+
+    menuIcon.addEventListener("click", function () {
+        navbar.classList.toggle("active"); // Toggle dropdown visibility
+    });
+
+    // Close menu when clicking outside of it
+    document.addEventListener("click", function (event) {
+        if (!menuIcon.contains(event.target) && !navbar.contains(event.target)) {
+            navbar.classList.remove("active");
+        }
+    });
+});
