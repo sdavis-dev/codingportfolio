@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Start animation sequence
     setTimeout(() => {
-        typeEffect(h1Element, "Hey Everyone, It's <span>SeDerrick</span>", 100, function () {
+        typeEffect(h1Element, "Hey Everyone, It's <span>SeDerrick</span>", 80, function () {
             showSpan(h1Element); // Show the span after typing
 
             setTimeout(() => {
-                typeEffect(h3Element, "An Inspired <span>Software Engineer</span>", 100, function () {
+                typeEffect(h3Element, "An Inspired <span>Software Engineer</span>", 80, function () {
                     showSpan(h3Element); // Show the span after typing
                 });
             }, 500); // Delay before h3 starts
